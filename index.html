@@ -9,13 +9,12 @@
 <body>
 
     <header class="header">
-        <p><img src="./assets/Logo.png" alt="Logo" class="Logo"></p>
+        <img src="./assets/Logo.png" alt="Logo" class="Logo">
     </header>
 
     <main class="contenedor">
         <div class="Challenge_Entrada">
-            <textarea name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aqui" class="Textarea">
-            </textarea>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aqui" class="Textarea"></textarea>
             <p class="Advertencia"><span class="Signo">!</span>Solo letras minúsculas y sin acentos.</p>
 
             <div class="Botones">
@@ -25,16 +24,17 @@
                     Desencriptar</button>
             </div>
         </div>
-
         <div class="Challenge_Salida">
             <img src="./assets/Muñeco.png" alt="Muñeco" class="container__imagen-persona" id="Muñeco" />
 
             <div class="desencritar">
-                <h2 id="Titulo">Ningún mensaje fue encontrado</h2>
-                <p id="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                <textarea name="Mostar Mensaje" id="Mensaje" cols="30" role="10" class="Mostar_Mensaje">
+                <div class="desen-con">
+                    <h2 id="Titulo">Ningún mensaje fue encontrado</h2>
+                    <p id="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea name="Mostar Mensaje" id="Mensaje" cols="30" role="10" class="Mostar_Mensaje" readonly>
                 </textarea>
-
+                <button type="submit" class="btn_copiar">Copiar</button>
             </div>
         </div>
     </main>
@@ -42,6 +42,6 @@
     <footer class="Challenge_footer">
         <p>Desarrollado por Yan Carlos Castilla Gómez</p>
     </footer>
-    
+
 </body>
 </html>

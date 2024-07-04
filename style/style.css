@@ -3,26 +3,48 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
+.header{
+    width: 91%;
+    margin: auto;
+}
 .Logo{
     color: white;
+    margin-top: 40px;
 }
 body{
  background: #E5E5E5;
- box-sizing: border-box;
 }
 
 .contenedor{
-    display: flex;
-    align-items: center;
-    padding: 15%;
-    justify-content: space-between;
-    gap: 80px;
+    display: flex;  
+    flex-direction: row;
 }
-
+.Challenge_Entrada{
+    background-color: #E5E5E5;
+    margin: 80px 80px 72px 240px;
+}
 .Textarea{
-    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: darkblue;
+    /* border: none;*/
+    width: 680px;
+    height: 300px;
+    background: transparent;
+}
+.Textarea::placeholder{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: darkblue;
+}
+.Textarea:focus,
+.Textarea:active{
+    border: none;
+    outline: none;
 }
 .Signo{
     display: inline-block;
@@ -41,15 +63,20 @@ body{
     font-weight: 400;
     font-size: 12px;
     color: gray;
+    
+    display: flex;
+    align-items: center;
+    padding: 1% 5%;
 }
 
-
+.Challenge_Salida{
+    background-color: gray;
+}
 
 .Challenge_footer{
     background-color: darkblue;
     color: white;
     text-align: center;
-    padding: 3px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
