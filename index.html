@@ -15,8 +15,9 @@
     <main class="contenedor">
         <div class="Challenge_Entrada">
             <textarea name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aqui" class="Textarea"></textarea>
-            <p class="Advertencia"><span class="Signo">!</span>Solo letras minúsculas y sin acentos.</p>
-
+            <div class="Contenedor_Aviso">
+                <p class="Advertencia"><span class="Signo">!</span>Solo letras minúsculas y sin acentos.</p>
+            </div>
             <div class="Botones">
                 <button class="boton_encriptar" type="button" onclick="encriptar()" value="Encriptar">
                     Encriptar</button>
@@ -25,17 +26,14 @@
             </div>
         </div>
         <div class="Challenge_Salida">
-            <img src="./assets/Muñeco.png" alt="Muñeco" class="container__imagen-persona" id="Muñeco" />
-
             <div class="desencritar">
-                <div class="desen-con">
-                    <h2 id="Titulo">Ningún mensaje fue encontrado</h2>
-                    <p id="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                </div>
-                <textarea name="Mostar Mensaje" id="Mensaje" cols="30" role="10" class="Mostar_Mensaje" readonly>
-                </textarea>
-                <button type="submit" class="btn_copiar">Copiar</button>
+                <img src="./assets/Muñeco.png" alt="Muñeco" class="container__imagen-persona" id="Muñeco" />
+                <h2 id="Titulo">Ningún mensaje fue encontrado</h2>
+                <p id="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <textarea name="Mostar Mensaje" id="Mensaje" cols="30" role="10" class="Mostar_Mensaje" readonly>
+            </textarea>
+            <button type="submit" class="btn_copiar">Copiar</button>
         </div>
     </main>
     
