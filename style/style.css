@@ -7,11 +7,13 @@
 }
 .header{
     position: absolute;
-    width: 100%;
     margin: 40px 0px 0px 40px;
 }
-.Logo{
-    color: white;
+header .Logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
 }
 body{
  background: #E5E5E5;
@@ -105,9 +107,9 @@ body{
 }
 
 .Challenge_Salida{
-    width: 31.5%;
+    width: 336px;
     height: 944px;
-    margin: 40px 40px 40px 0px;
+    margin: 40px 40px 40px 40px; 
     position: relative;
     background-color: #FFFFFF;
     border-radius: 32px;
@@ -193,3 +195,74 @@ body{
 /*
 Arreglo de la Responsividad
 */
+@media(max-width:1250px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .Challenge_Entrada{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+    .Contenedor_Aviso{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin:15px;
+    }
+    .muñeco{
+        display: none;
+    }
+    .Challenge_Salida{
+        width: 668px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .desencritar{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 40%;
+
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .btn_copiar{
+        position: inherit;
+        width: 100%;
+    }
+    .Mostar_Mensaje{
+        width: 100%;
+        height: 210px;  
+    }
+}
+
+@media(max-width:720px){
+    header .Logo{
+        width: 100%;
+        background: transparent;
+        padding: 2px;
+    }
+    .Textarea{
+        width: 90%;
+        font-size: 24px;
+    }
+    .Botones{
+        display: grid;
+        gap: 21px;
+    }
+    .Challenge_Salida{
+        width: 90%;
+    }
+    
+}
