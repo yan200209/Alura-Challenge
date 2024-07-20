@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+:root{
+    --ColorPrimario:#E5E5E5;
+    --ColorSecundario:#0A3871;
+    --ColorTerciario:#495057;
+    --Color:white;
+    --FamiliaFuente:"Inter", sans-serif;
+    
+}
 *{
     padding: 0;
     margin: 0;
@@ -16,7 +23,7 @@ header .Logo{
     height: 48px;
 }
 body{
- background: #E5E5E5;
+ background: var(--ColorPrimario);
 }
 
 .contenedor{
@@ -30,20 +37,20 @@ body{
 }
 
 .Textarea{
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
     font-size: 32px;
-    color: darkblue;
+    color: var(--ColorSecundario);
     border: none;
     background: transparent;
     width: 600px;
     height: 288px;
 }
 .Textarea::placeholder{
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
     font-size: 32px;
-    color: darkblue;
+    color: var(--ColorSecundario);
 }
 .Textarea:focus,
 .Textarea:active{
@@ -54,7 +61,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 395px;
+    margin-top: 50.4%;
 }
 .Signo{
     display: inline-block;
@@ -62,7 +69,7 @@ body{
     height: 20px;
     background-color: gray; 
     border-radius: 50%; 
-    color: white;
+    color: var(--ColorPrimario);
     text-align: center;
     line-height: 20px; 
     font-weight: bold;
@@ -72,7 +79,7 @@ body{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    color: #495057;
+    color: var(--ColorTerciario);
 }
 .Botones{
     display: flex;
@@ -84,13 +91,13 @@ body{
 .boton_encriptar{
     width: 328px;
     height: 67px;
-    font-family: "Inter", sans-serif;
+    font-family:var(--FamiliaFuente);
     font-weight: 400;
     font-size: 16px;
-    background-color: #0A3871;
-    color: #FFFFFF;
+    background-color: var(--ColorSecundario);
+    color: var(--ColorPrimario);
     border-radius: 24px;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--ColorSecundario);
     cursor: pointer;
 }
 .boton_desencriptar{
@@ -107,37 +114,38 @@ body{
 }
 
 .Challenge_Salida{
-    width: 336px;
+    width: 25%; /*336*/
     height: 944px;
     margin: 40px 40px 40px 40px; 
     position: relative;
-    background-color: #FFFFFF;
+    background-color: var(--Color);
     border-radius: 32px;
     text-align: center;
 }
 .desencritar{
-    width: 336px;
+    width: 321px;
     margin: auto;
     margin-top: 50%;
 }
 .muñeco{
-    background-color: #FFFFFF;
+    background-color: var(--Color);
+    width: 100%;
 }
 .Titulo{
     margin-top: 32px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 700;
     font-size: 24px;
     background: transparent;
-    color:#343A40;
+    color:var(--ColorTerciario);
     text-align: center;
 }
 .Parrafo{
     margin-top: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
     font-size: 16px;
-    color: #495057;
+    color: var(--ColorTerciario);
     text-align: center;
     background: transparent;
 }
@@ -148,10 +156,10 @@ body{
     top: 32px;
     left: 32px;
 
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
     font-size: 24px;
-    color:#495057;
+    color:var(--ColorTerciario);
     background: transparent;
     border: none;
 }
@@ -168,12 +176,12 @@ body{
     height: 67px;
     margin: 32px;
     border-radius: 24px; 
-    border: 1px solid #0A3871; 
+    border: 1px solid var(--ColorSecundario); 
     cursor: pointer;
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
     font-size: 16px;
-    color:#0A3871;
+    color:var(--ColorSecundario);
     visibility: hidden;
 }
 .boton_desencriptar:hover,
@@ -182,14 +190,12 @@ body{
     transform: scale(0.97);
 }
 .Challenge_footer{
-    margin-top: 15px;
-    height: 60px;
-
-    background-color: #0A3871;
+    height: 30px;
+    background-color: var(--ColorSecundario);
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: var(--FamiliaFuente);
     font-weight: 400;
-    color: white;
+    color: var(--Color);
 }
 
 /*
