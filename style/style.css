@@ -24,6 +24,8 @@ header .Logo{
 }
 body{
  background: var(--ColorPrimario);
+ width: 100vw;
+ height: 100vh;
 }
 
 .contenedor{
@@ -61,7 +63,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 50.4%;
+    margin-top: calc(395px + (100vh - 1024px)); /* 395px*/
 }
 .Signo{
     display: inline-block;
@@ -114,8 +116,8 @@ body{
 }
 
 .Challenge_Salida{
-    width: 25%; /*336*/
-    height: 944px;
+    width: 25.8vw; /*336*/
+    height: 92vh; /*944*/
     margin: 40px 40px 40px 40px; 
     position: relative;
     background-color: var(--Color);
@@ -125,7 +127,7 @@ body{
 .desencritar{
     width: 321px;
     margin: auto;
-    margin-top: 50%;
+    margin-top: 20vh;
 }
 .muñeco{
     background-color: var(--Color);
@@ -182,7 +184,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     color:var(--ColorSecundario);
-    visibility: hidden;
+    visibility: hidden; 
 }
 .boton_desencriptar:hover,
 .boton_encriptar:hover,
@@ -229,7 +231,7 @@ Arreglo de la Responsividad
         height: 300px;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .desencritar{
