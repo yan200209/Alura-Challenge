@@ -116,8 +116,8 @@ body{
 }
 
 .Challenge_Salida{
-    width: 25.8vw; /*336*/
-    height: 92vh; /*944*/
+    width: calc(336px + (100vw - 1024px)); /*25.8vw; 336*/
+    height: calc(944px + (100vh - 1024px));/*92vh; 944*/
     margin: 40px 40px 40px 40px; 
     position: relative;
     background-color: var(--Color);
