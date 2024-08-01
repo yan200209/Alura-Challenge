@@ -24,7 +24,7 @@ function encriptar(){
     /* Reemplazo de acentos,signos,etc. por espacios... Para verificación*/
     let Entrada=texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
     if(texto==""){
-        Advert.style.background = "#FEFDCA";
+        Advert.style.background = "#ff7673";
         Advert.style.color = "#495057";
         Advert.style.fontWeight = "400";
         Advert.innerHTML =signo+"El campo de texto no debe estar vacio";
@@ -33,7 +33,7 @@ function encriptar(){
         },1000);
     }
     else if(texto !==Entrada){
-        Advert.style.background = "#FEFDCA";
+        Advert.style.background = "#ff7673";
         Advert.style.color = "#495057";
         Advert.style.fontWeight = "400";
         setTimeout(()=>{
@@ -42,7 +42,7 @@ function encriptar(){
     }
     else if(texto !== texto.toLowerCase()){
         /*Verifica que al usar toLowerCase no use letras Mayusculas*/
-        Advert.style.background = "#FEFDCA";
+        Advert.style.background = "#ff7673";
         Advert.style.color = "#495057";
         Advert.style.fontWeight = "400";
         setTimeout(()=>{
