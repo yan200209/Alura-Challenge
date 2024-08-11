@@ -47,6 +47,7 @@ body{
     background: transparent;
     width: 600px;
     height: 288px;
+    resize: none;
 }
 .Textarea::placeholder{
     font-family: var(--FamiliaFuente);
